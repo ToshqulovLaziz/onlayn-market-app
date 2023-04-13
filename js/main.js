@@ -1,5 +1,5 @@
 // API
-const API_PATH = "http://localhost:5000/";
+const API_PATH = "https://market-backend-reec.onrender.com/";
 const token = localStorage.getItem("loginToken");
 
 // GET ELEMENTS
