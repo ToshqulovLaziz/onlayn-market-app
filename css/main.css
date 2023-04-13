@@ -1,0 +1,286 @@
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin-500.woff') format('woff');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/inter-v12-latin-300.woff2') format('woff2'),
+    url('../fonts/inter-v12-latin-300.woff') format('woff'); 
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v12-latin-regular.woff2') format('woff2'),
+    url('../fonts/inter-v12-latin-regular.woff') format('woff');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/inter-v12-latin-500.woff2') format('woff2'),
+    url('../fonts/inter-v12-latin-500.woff') format('woff');
+}
+html{
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color: #fff;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+ul{
+    padding-left: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/***************** Header style start *****************/
+.site-header {
+    position: relative;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.site-logo {
+    width: 215px;
+    height: 32px;
+}
+.site-header__btn {
+    width: 120px;
+    height: 40px;
+    padding: 11px 16px 11px 48px;
+    border: none;
+    background: rgba(49, 49, 196, 0.1);
+    border-radius: 4px;
+}
+.site-header__mid {
+    position: relative;
+}
+.site-header__btn::before {
+    position: absolute;
+    top: calc(23%);
+    left: calc(2.3%);
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/icon/catalog-icon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: " ";
+}
+.site-header__input {
+    width: 496.47px;
+    height: 40px;
+    margin-left: 10px;
+    padding: 12px 113.469px 12px 17px;
+    border: none;
+    background: #fff;
+    border: 1px solid rgba(118, 121, 127, 0.3);
+    border-radius: 4px;
+}
+.site-header__input::placeholder {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #757575;
+}
+.input-serch {
+    position: absolute;
+    top: calc(1.7%);
+    right: calc(-0.2%);
+    padding: 8px 29px;
+    background: rgba(118, 121, 127, 0.05);
+    border-radius: 0px 4px 4px 0px;
+}
+.site-header__end {
+    position: relative;
+}
+.site-header__link {
+    padding: 12px 10px 12px 30px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000;
+}
+.site-header__link:hover {
+    background: rgba(118, 121, 127, 0.05);
+    border-radius: 0px 4px 4px 0px;
+} 
+.site-header__link::before {
+    position: absolute;
+    top: calc(17%);
+    left: calc(2%);
+    width: 16px;
+    height: 18px;
+    background-image: url('../images/icon/humans.svg');top: calc(17%);
+    left: calc(2%);
+    width: 16px;
+    height: 18px;
+    background-image: url('../images/icon/humans.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: " ";
+}
+.link-wishes::before {
+    top: calc(15%);
+    left: calc(32%);
+    width: 20px;
+    height: 17px;
+    background-image: url('../images/icon/yurak.svg');
+}
+.link-cart::before {
+    top: calc(8%);
+    left: calc(72%);
+    width: 16px;
+    height: 19px;
+    background-image: url('../images/icon/korzina.svg');
+}
+.site-nav__link {
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.7);
+    opacity: 0.87;
+}
+.site-nav__link:hover {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+/***************** Header style end *****************/
+/***************** Main style start *****************/
+/***************** Main Banner style start *****************/
+.banner {
+    width: 1240px;
+    height: 413.02px;
+    border-radius: 12px;
+}
+.site-main__banner--img {
+    display: block;
+    max-width: 1240px;
+    max-height: 413px;
+}
+/***************** Main Banner style end *****************/
+/***************** Main Product style start *****************/
+.site-product__add {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.product-sect__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    position: relative;
+    width: 40%;
+}
+.product-item {
+    position: relative;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.item-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border: 3px solid black;
+    border-radius: 12px;
+    background-color: #E5E5E5;
+}
+.product-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 15px;
+    color: #000;
+}
+.product-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    color: #000;
+}
+.product-price {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 17px;
+    color: #000;
+}
+.product-korzinka {
+    position: absolute;
+    bottom: 127px;
+    right: 37px;
+    border: none;
+}
+/***************** Main Product style end *****************/
+/***************** Main style end *****************/
+
